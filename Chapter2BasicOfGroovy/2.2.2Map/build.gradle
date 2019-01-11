@@ -1,0 +1,13 @@
+task printlnMap {
+	doLast{
+		def map1 =['width':1024,'height':768]
+		println map1.getClass().name
+
+		println map1['width']
+		println map1.height
+
+		map1.each {
+			println "Key:${it.key},Value:${it.value}"
+		}
+	}
+}

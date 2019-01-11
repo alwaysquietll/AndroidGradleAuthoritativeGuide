@@ -1,0 +1,10 @@
+task invokeMethod{
+	doLast{
+		method1(1,2)
+		method1 1,2
+	}
+}
+
+def method1(int a,int b){
+	println a+b
+}

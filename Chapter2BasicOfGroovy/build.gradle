@@ -8,3 +8,10 @@ task printStringClass  {
 	}
     
 }
+task printStringVar {
+	doLast{
+		def name = "张三"
+		println '单引号的变量计算：${name}'
+		println "双引号的变量计算：${name}"
+	}
+}
