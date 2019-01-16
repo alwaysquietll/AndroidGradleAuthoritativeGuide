@@ -1,0 +1,5 @@
+def buildTime() {
+	def date = new Date()
+	def formattedDate = date.format('yyyyMMdd')
+	return formattedDate
+}
